@@ -30,7 +30,7 @@ def lirik_januari_final():
         print()
 
     print("\n" + "=" * 40)
-    print("Thankhttps://github.com/Reszz06 you bro")
+    print("Thank you bro")
     print("=" * 40)
 
 if __name__ == "__main__":
