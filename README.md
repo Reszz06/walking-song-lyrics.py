@@ -1,37 +1,16 @@
-import time
-import sys
+# 🎶 Lyric Scroller: Januari - Glenn Fredly
 
-def lirik_januari_final():
-    # Bagian Header/Atribusi
-    print("=" * 40)
-    print("🎶 Glenn Fredly - Januari (Bagian Akhir)")
-    print("💻 Created by Resz?!")
-    print("=" * 40 + "\n")
-    
-    time.sleep(1.5)
+Sebuah skrip Python sederhana untuk menampilkan lirik lagu "Januari" dengan efek mengetik otomatis (*typewriter effect*) dan jeda waktu yang pas sesuai perasaan lagunya.
 
-    # Format: ("Teks Lirik", Kecepatan Ketik, Jeda Setelah Baris)
-    lirik = [
-        ("Oh kasihku, sampai disini kisah kita", 0.1, 1.2),
-        ("Jangan tangisi keadaannya", 0.1, 1.5),
-        ("Bukan karena kita berbeda", 0.1, 2.0),
-        ("Dengarkan, dengarkan lagu lagu ini", 0.07, 1.2),
-        ("Memori rintihan hati", 0.1, 1.5),
-        ("Kisah kita berakhir di Januari", 0.15, 3.0)
-    ]
+## ✨ Fitur
+- **Typewriter Animation**: Lirik muncul karakter demi karakter, bukan langsung sekaligus.
+- **Auto-Timing**: Setiap baris punya kecepatan dan jeda yang sudah disesuaikan.
+- **Clean UI**: Dilengkapi dengan header dan footer di terminal.
 
-    for teks, speed, delay in lirik:
-        for karakter in teks:
-            sys.stdout.write(karakter)
-            sys.stdout.flush()
-            time.sleep(speed)
-        
-        time.sleep(delay)
-        print()
-
-    print("\n" + "=" * 40)
-    print("Thank you bro")
-    print("=" * 40)
-
-if __name__ == "__main__":
-    lirik_januari_final()
+## 🚀 Cara Menjalankan
+1. Pastikan kamu sudah menginstal **Python 3** di komputermu.
+2. Simpan kode ke dalam file bernama `lirik.py`.
+3. Buka terminal atau command prompt.
+4. Jalankan perintah berikut:
+   ```bash
+   python lirik.py
